@@ -58,6 +58,12 @@ body{
     padding-left: 20%;
     padding-right: 20%;
 }
+.logo {
+    width: 100%;
+    padding-top: 20%;
+    background: url(../images/owO.png) no-repeat center;
+    background-size: cover;
+}
 /*logo Nation Glory*/
 
 /*Acceuil*/
@@ -69,21 +75,14 @@ body{
 /*Acceuil*/
 
 /*Documentations-menu*/
-.container {
-    padding-left: 20%;
-    padding-right: 20%;
-}
 .documentation h2 {
     color: white;
 }
-.documentation {
-    display: block;
-    -webkit-box-flex: 0;
-    float: left;
-}
 .documentation h4 {
+    display: block;
+    width: 100%;
     color: rgba(1, 103, 255, 0.76);
-    padding-left: 8%;
+    margin-left: 10px;
     padding-top: 10%;
     padding-bottom: 2%;
 }
@@ -102,8 +101,34 @@ body{
     padding: 8px 16px;
     text-decoration: none;
 }
+
+.doc-section {
+    width: 0;
+    height: 0;
+    margin: auto;
+    margin-left: 0.9rem;
+
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    
+    border-left: 9px solid #ffffff;
+}
+.off {
+    display: none;
+}
+.one {
+    display: block;
+    opacity: 1;
+}
+.true {
+    transform: rotate(90deg);
+}
+
+.doc-flexbox {
+    display: inline-flex;
+}
   
-  /* Change the link color on hover */
+/* Change the link color on hover */
 .documentation li a:hover {
     background-color: #555;
     color: white;
@@ -111,36 +136,36 @@ body{
 /*Documentations-menu*/
 
 /*Paragrafe de documentation*/
-.doc {
-    padding-top: 20px;
-    width: 800px;
-    margin-left: 250px;
-    height: 1px;
-    color: rgba(255, 255, 255, 0.877);
-}
-.doc p {
-    padding-bottom: 20px;
-}
-.doc ul li {
-    padding-top: 10px;
-}
 .text-principale {
     text-align: center;
-    font-family: Typewriter, serif;
-    color: rgba(1, 103, 255, 0.76);
+    font-family: 'Oswald', sans-serif;
+    color: rgba(1, 103, 255, 0.911);
     margin-bottom: 20px;
 }
 .text-sous-principale {
     color: white;
     padding-bottom: 10px;
 }
+.img {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.paragraphe {
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+}
 .contenant {
-    border-radius: 0.5%;
-    border: 1px solid #000000;
-    padding: 30px;
-    width: 100%;
+    width: auto;
     height: auto;
+}
+.color-contenant {
+    border-radius: 0.5%;
     background: #1b1b1b;
+    color: rgba(255, 255, 255, 0.877);
+    padding: 20px;
+    margin-left: 15px;
 }
 .ressorce {
     background-color: rgba(180, 137, 16, 0.815);
@@ -184,4 +209,29 @@ footer {
 }
 /*Premiere menu-bas*/
 
+.flex-box {
+    padding-left: 20%;
+    padding-right: 20%;
+    display: inline-flex;
+}
 
+@media (max-width: 1400px) {
+.flex-box{
+    padding-left: 0%;
+    padding-right: 0%;
+}
+.color-contenant {
+    margin-right: 15px;
+}
+.navbar ul{
+    padding-left: 0%;
+    padding-right: 0%;
+}
+.fond {
+    padding-left: 0%;
+    padding-right: 0%;
+}
+.documentation {
+    margin-left: 15px;
+}
+}
