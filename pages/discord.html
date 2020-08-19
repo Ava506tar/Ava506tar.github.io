@@ -2,24 +2,54 @@
 <html lang="fr">
 
 <head>
-  <meta charset="utf-8">
-  <title>Documentation Nation Glory</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AmeAnime Test</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/AmeAnime.css">
 </head>
 
 <body>
+
   <div class="navbar">
     <ul>
       <li ><a class="colory" href="../index.html">NationGlory</a></li>
       <li style="float:right"><a href="../pages/documentation.html">Documentation</a></li>
       <li style="float:right"><a href="#">BotDiscord</a></li>
     </ul>
-    
   </div>
+
   <div class="fond">
-    <img src="../images/owO.png" alt="Smiley face" height="200" width="100%">
+    <img class="logo">
   </div>
+  <div class="container">
 
+    <div class="allVid">
+        <video class="video">
+          <source src="../video/Made in Abyss Opening FullDeep in Abyss.mp4" type="video/mp3">
+          <source src="../video/Made-in-Abyss-Opening-FullDeep-in-Abyss.webm" type="video/webm">
+        </video>
+
+        <div class="controls">
+            <div class="orange-bar">
+                <div class="orange-juice"></div>
+            </div>
+
+            <div class="buttons">
+                <button id="play-pause"></button>
+                <button id="mute">Mute</button>
+                <input type="range" id="volumeSlider" type="range" min="0" max="100" value="50" step="1">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="../js/menu-doc.js"></script>
 </body>
-
 </html>
