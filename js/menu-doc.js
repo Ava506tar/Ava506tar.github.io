@@ -1,12 +1,3 @@
-const sectionFlex = document.querySelector('.doc-flexbox')
-const section = document.querySelector('.doc-section')
-const sectionoff = document.querySelector('.off')
-
-sectionFlex.addEventListener('click', () => {
-    section.classList.toggle('true');
-    sectionoff.classList.toggle('one');
-});
-
 let video = document.querySelector('.video');
 let juice = document.querySelector('.orange-juice');
 let btn = document.getElementById('play-pause');
