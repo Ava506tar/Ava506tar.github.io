@@ -2,133 +2,54 @@
 <html lang="fr">
 
 <head>
-  <meta charset="utf-8">
-  <title>Documentation Nation Glory</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Oswald:wght@200&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AmeAnime Test</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/AmeAnime.css">
 </head>
 
 <body>
+
   <div class="navbar">
     <ul>
       <li ><a class="colory" href="../index.html">NationGlory</a></li>
-      <li style="float:right"><a href="#">Documentation</a></li>
-      <li style="float:right"><a href="../pages/discord.html">Discord Bot</a></li>
+      <li style="float:right"><a href="../pages/documentation.html">Documentation</a></li>
+      <li style="float:right"><a href="#">BotDiscord</a></li>
     </ul>
-    
   </div>
+
   <div class="fond">
     <img class="logo">
   </div>
-<div class="flex-box">
-  <div class='documentation'>
-    <ul>
-        <h2 >Général</h2>
-        <li><a href="../Docs/Général-Connexion1.html">Première Connexion</a></li>
-        <h2>Commande</h2>
-        <div class="doc-flexbox">
-        <div class="doc-section"></div>  
-        <h4>Pays</h4>
+  <div class="container">
+
+    <div class="allVid">
+        <video class="video">
+          <source src="../video/Made in Abyss Opening FullDeep in Abyss.mp4" type="video/mp3">
+          <source src="../video/Made-in-Abyss-Opening-FullDeep-in-Abyss.webm" type="video/webm">
+        </video>
+
+        <div class="controls">
+            <div class="orange-bar">
+                <div class="orange-juice"></div>
+            </div>
+
+            <div class="buttons">
+                <button id="play-pause"></button>
+                <button id="mute">Mute</button>
+                <input type="range" id="volumeSlider" type="range" min="0" max="100" value="50" step="1">
+            </div>
         </div>
-        <div class="off">
-        <li><a href="#">Faction</a></li>
-        <li><a href="#">Bank</a></li>
-        <li><a href="#">Loyer</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Prefix</a></li>
-        </div>
-        <div class="doc-flexbox">
-        <div class="doc-section"></div>  
-        <h4>Chat</h4>
-        </div>
-        <li><a href="#">mention</a></li>
-        <li><a href="#">groupe-msg</a></li>
-        <div class="doc-flexbox">
-        <div class="doc-section"></div> 
-        <h4>Grade</h4>
-        </div>
-        <li><a href="#">Prenium</a></li>
-        <li><a href="#">Legendaire</a></li>
-        <li><a href="#">Heros</a></li>
-        <li><a href="#">Joueur</a></li>
-        <li><a href="#">Youtuber</a></li>
-        <h4>Entreprise :</h4>
-        <li><a href="#">Bank</a></li>
-
-        <h2>Craft</h2>
-        <h4>Galactycraft :</h4>
-        <li><a href="#">Ocean collector</a></li>
-        <li><a href="#">Repaire machine</a></li>
-        <li><a href="#">Eco tron</a></li>
-        <li><a href="#">Panneau Solaire</a></li>
-        <li><a href="#">Machine important</a></li>
-        <li><a href="#">Partir sur mars</a></li>
-        <h4>Bouffe :</h4>
-        <li><a href="#">Extrem Chili</a></li>
-        <h4>Protection Base :</h4>
-        <li><a href="#">Renforced Concret</a></li>
-        <li><a href="#">Tourelle</a></li>
-        <li><a href="#">Anti-Missil</a></li>
-
-        <h2>Classement</h2>
-        <h4>Notation :</h4>
-        <li><a href="#">Point</a></li>
-        <li><a href="#">Onu</a></li>
-
-        <h2>Evenement</h2>
-        <h4>Team Speak :</h4>
-        <li><a href="#">OMC</a></li>
-        <li><a href="#">ONU</a></li>
-        <h4>Pays :</h4>
-        <li><a href="#">Disband</a></li>
-
-        <h2>Autre</h2>
-        <h4>Rp serveur :</h4>
-        <li><a href="#">Roles</a></li>
-        <li><a href="#">Plainte</a></li>
-        <li><a href="#">Entreprise</a></li>
-        <h4>Armure :</h4>
-        <li><a href="#">Info</a></li>
-        <li><a href="#">Info</a></li>
-        <li><a href="#">eco</a></li>
-    </ul>
-  </div>
-
-  <div class="contenant">
-    <div class="color-contenant">
-    <h1 class="text-principale">BIENVENUE SUR LA DOCUMENTATION</h1>
-    <p class="paragraphe">
-    Bienvenue sur la documentation du BLEU non officiel, elle te permettra de trouver les astuces dans le jeu et de te guider tout au long de ton aventure. 
-    Je te conseil de regarder toutes les sections pour t’informer comment le jeu marche dans son ensemble.
-    </p>
-    <h2 class="text-sous-principale">Présentation :</h2>
-    <p class="paragraphe">
-    NationGlory est un PvpFaction moddé. Il se déroule sur la carte du monde. 
-    Le but de ce jeu est de devenir la nation la plus forte. Un synthème de guerre entre pays qui ne se fini jamais. Vous pouvez vous faire trahir, former une alliance. 
-    La seule chose qui importe c’est la sécurité de votre pays. Les pays sont crées par les joueurs qui construisent des villes pour pouvoir accueillir des personnes 
-    dans leur nation. Il y a différents moyens de gagner de l’argent mais celui qui marche le mieux, c’est les notations. 
-    Chaque semaine tous les pays seront notés par des membres du staff, plus ton pays est développé en terme de builds, de membres, de guerres
-    alors tu recevras de l’argent en compassion de ton travail.
-    </p>
-  </div>
-  </div>
+    </div>
 
 </div>
 
-  <div class="espace">
-  </div>
-
-  <footer>
-    <div class="menu-bas">
-        <h3 class="text-bas1">Documentation</h3>
-        <h3 class="text-bas2">Cette page est non officiel et pour Le BLUE</h3>
-        <h3 class="text-bas3"></h3>
-    </div>
-  </footer>
-
-  <script src="../js/menu-doc.js"></script>
-
+<script src="../js/menu-doc.js"></script>
 </body>
-
 </html>
