@@ -31,7 +31,7 @@ video.addEventListener('timeupdate', function(){
     juice.style.width = juicePos * 100 + '%';
 
     if(video.ended) {
-        btn.className ="play";
+        video.play();
     }
 
 
